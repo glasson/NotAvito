@@ -1,2 +1,2 @@
 # NotAvito
-it is really not avito
+it is really not avito ok
