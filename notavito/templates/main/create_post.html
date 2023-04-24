@@ -10,12 +10,10 @@
 <body>
 {% block header %}
 {% endblock %}
-<h1>Создание поста</h1>
-<form method="post" enctype="multipart/form-data">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Submit</button>
-</form>
+
+
+{% block form %}
+{% endblock %}
 
 {% block footer %}
 {% endblock %}
