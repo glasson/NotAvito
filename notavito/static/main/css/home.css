@@ -1,0 +1,211 @@
+@font-face{
+	margin:0 0 0 0;
+	font-family: Libre Franklin;
+	src: url(../fonts/LibreFranklin.ttf);
+}
+body{
+	margin: 0 0 0 0;
+   	font-family:Libre Franklin;	
+   	min-height:100%;
+    position:relative;
+    background-image: url(../images/images.jfif);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+header{
+	font-size:15px;
+	position: fixed;
+	top:0px;
+	width:100%;
+	height:80px;
+	background-color: #646464;
+	align-items: center;
+	z-index: 10;
+	display: flex;
+}
+footer{	
+	position:absolute;
+	width:100%;
+	height:7.48%;
+	background-color: #646464;
+	color:white;
+}
+.logo{
+	position: relative;
+	top:10%;
+	display: inline-block;
+	background-size: 100%;
+	width:12.9%;
+	height:81.25%;
+	margin-left:2.708%;
+	margin-top:auto;
+}
+.katalog{
+	position: relative;
+	top:8%;
+	display: inline-block;
+	font-weight:540;
+	outline: none;
+	border:0;
+	background:none;
+	width:8.6%;
+	height:50%;
+	color:white;
+	margin-left:3.140625%;
+	vertical-align: middle;
+}
+.katalog p{
+	margin: auto;
+	display:inline-block;
+	font-size:97%;
+	height:50%;	
+}
+.searching{
+	position: relative;
+	top:10%;
+	display: inline-block;
+	font-weight:540;
+	outline: none;
+	border:0;
+	background:none;
+	width:8.6%;
+	height:50%;
+	color:white;
+	text-align:center;
+	margin-left:1.31825%;
+}
+.searching p{
+	margin: auto;
+	display:inline-block;
+	font-size:97%;
+	height: 50%;	
+}
+.searcher{
+	position: relative;
+	top:11%;
+	display: inline-block;
+	font-weight:540;
+	width:34.92%;
+	height:50%;
+	color:orange;
+	text-align:left;
+	margin-left:3.328125%;
+
+}
+.create_ad{
+	position: relative;
+	top:10%;
+	display: inline-block;
+	font-weight:540;
+	outline: none;
+	border:0;
+	background-color:#06a4fb;
+	width:9.765%;
+	height:50%;
+	color:white;
+	margin-left:2.4375%;
+	text-align:center;
+	border-radius:3%;
+}
+.create_ad p{
+	margin:auto;	
+	font-size:94.5%;
+	height:60%;
+}
+.login{
+	position: relative;
+	top:10%;
+	display: inline-block;
+	font-weight:540;
+	outline: none;
+	border:0;
+	background:none;
+	width:8.6%;
+	height:50%;
+	color:white;
+	margin-left:2.1875%;
+	text-align:center;
+}
+.login p{
+	margin: auto;
+	display:inline-block;
+	font-size:97%;
+	height: 50%;	
+}
+.foot_links a{
+	text-decoration: none;
+	color:white;
+	font-size:100%;
+}
+.foot_links div{
+	margin-top:1%;
+	float:left;
+	margin-left:2%;
+}
+.main{
+	height:1000px;
+	width:100%;
+	padding-top:7%;
+	padding-left:7.265625%;
+	padding-bottom: 9.48%;
+}
+.advertise{
+	font-weight: 550;
+	outline: none;
+	border:0;
+	position:fixed;
+	right:3.3%;
+	height:68.7%;
+	width:18%;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 1.5%;
+	align-content: middle;
+}
+.advertise p{
+	font-size:15px;
+	display: inline-block;
+	width:25%;
+}
+.slider{
+	background-color: none;
+	width:70.8%;
+	height:13.4%;
+}
+.slider div{
+	height:100%;
+}
+.car-img{
+	background-size: 100%;
+	height: 100%;
+}
+.my-container{	
+	width:73%;
+	height:50%;
+	margin-top:3.67%;
+}
+.my-container .row{
+	margin-top:4.55%;
+}
+.ad-card{
+	width: 100%;
+	height:200px;
+	background-size: cover;
+}
+.card {
+	background: none;
+	text-align: center;
+}
+.card h5{
+	position: absolute; 
+	top:100%; 
+	align-self: center;
+}
+.aimage{
+	outline: none;
+	border:0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-image: url("https://mobimg.b-cdn.net/v3/fetch/37/37a4388d1f27bf3cb994125648f8ed81.jpeg");
+}
