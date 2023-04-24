@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import create_post
+from main.views import create_post, search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('main', ...),
-    # path('search', ...),
+    path('search', search, name='search'),
     # path('post/<int: post_id>', ...),
     # path('post/<int: post_id>/edit', ...),
     # path('login', ...),
