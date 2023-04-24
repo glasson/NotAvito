@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import test
+from main.views import create_post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +25,5 @@ urlpatterns = [
     # path('post/<int: post_id>/edit', ...),
     # path('login', ...),
     # path('registration', ...),
-    path('test', test)
+    path('post_create', create_post)
 ]
