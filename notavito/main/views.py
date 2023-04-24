@@ -15,4 +15,4 @@ def create_post(request):
             return HttpResponse("Успешно")
     else:
         form = PostForm()
-    return render(request, 'main/create_post.html', {'form': form})
+    return render(request, 'main/header.html', {'form': form})
