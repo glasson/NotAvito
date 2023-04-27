@@ -1,7 +1,8 @@
-"""notavito URL Configuration
+"""
+URL configuration for NotAvito project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
+    https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,16 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import create_post, search, main, edit_post, registration, delete_post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main', main, name='main'),
-    path('search', search, name='search'),
-    # path('post/<int: post_id>', ...),
-    # path('login', ...),
-    path('registration', registration, name="registration"),
-    path('post_create', create_post),
-    path('post/<int:post_id>/delete', delete_post, name='delete_post'),
-    path('post/<int:post_id>/edit', edit_post),
 ]
