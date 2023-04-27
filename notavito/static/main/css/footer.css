@@ -1,0 +1,20 @@
+footer {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.right a {
+  color: white;
+  margin-left: 10px;
+}
