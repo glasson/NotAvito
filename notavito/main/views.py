@@ -1,10 +1,8 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import PostForm
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Post
 
-def test(request):
-    return render(request, template_name="main/footer.html")
 
 def create_post(request):
     if request.method == 'POST':
@@ -13,10 +11,10 @@ def create_post(request):
             post = form.save(commit=False)
             post.owner = request.user
             post.save()
-            return HttpResponse("Успешно")
+            return HttpResponseRedirect('main')
     else:
         form = PostForm()
-    return render(request, 'main/header.html', {'form': form})
+    return render(request, 'main/create_post.html', {'form': form, 'user': request.user})
 
 def search(request):
     search_word = request.GET.get('search')
@@ -27,3 +25,26 @@ def search(request):
             return render(request, 'main/not_founded.html')
     except:
         return render(request, 'main/not_founded.html')
+
+def delete_post(request, post_id):
+    post_object = get_object_or_404(Post, id=post_id) #если не нашел отправить 404
+    if request.method == "POST":
+        post_object.delete()
+        return render(request, template_name='main/success_deleted.html')
+
+
+def edit_record(request, post_id):
+    record = get_object_or_404(Post, id=post_id)
+
+    if request.method == 'POST':
+        form = PostForm(request.POST, instance=record)
+        if form.is_valid():
+            form.save()
+            return redirect('main')
+    else:
+        form = PostForm(instance=record)
+
+    return render(request, 'edit_record.html', {'form': form, 'record': record})
+
+def main():
+    return HttpResponse("main")
