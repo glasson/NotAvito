@@ -1,41 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
-</head>
-<body>
-<header>
-  <div class="header-left">
-    <a href="main/">Главная</a>
-  </div>
-    <form action="{% url 'search' %}">
-        <div class="header-middle">
-            <input type="text" placeholder="Поиск">
-        </div>
-    </form>
+{%extends 'main/base.html' %}
 
-  <div class="header-right">
-    <a href="#">Вход</a>
-  </div>
-</header>
-<H1>Ничего не найдено</H1>
-<div class="container-fluid fixed-bottom pl-0 pr-0">
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top " style="background-color: #13395c;">
-    <p class="col-md-4 mb-0 text-body-secondary text-light">© 2023 CringeStudio</p>
-
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-    </a>
-
-    <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">О нас</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Реклама</a></li>
-    </ul>
-  </footer>
-</div>
-</body>
-</html>
+{% block content %}
+    <h1>Ничего не найдено</h1>
+{%endblock%}
