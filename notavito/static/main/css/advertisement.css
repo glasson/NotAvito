@@ -1,5 +1,5 @@
 .post-title {
-    position: relative;
+    position: absolute;
     width: 385px;
     height: 39.67px;
     left: 50px;
@@ -16,7 +16,7 @@
 }
 
 .post-price {
-    position: relative;
+    position: absolute;
     width: 109px;
     height: 48px;
     left: 482px;
@@ -36,7 +36,7 @@
     width: 182px;
     height: 51px;
     left: 749px;
-    top: 120px;
+    top: 118px;
 
     font-family: 'Libre Franklin', serif;
     font-style: normal;
@@ -150,7 +150,7 @@
 .chat-button {
     box-sizing: border-box;
 
-    position: relative;
+    position: absolute;
     width: 125px;
     height: 136px;
     left: 1114px;
