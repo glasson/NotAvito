@@ -62,7 +62,8 @@ def registration(request):
 
 
 def login(request):
-    ...
+    if request.method == "POST":
+        ...
 
 
 def main():
