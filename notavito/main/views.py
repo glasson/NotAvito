@@ -44,7 +44,6 @@ def edit_post(request, post_id):
             return redirect('main')
     else:
         form = PostForm(instance=record)
-
     return render(request, 'edit_record.html', {'form': form, 'record': record})
 
 
@@ -55,10 +54,10 @@ def registration(request):
             new_user = user_form.save(commit=False)
             new_user.set_password(user_form.cleaned_data["password"])
             new_user.save()
-            return render(request, 'registration_done.html', {'new_user': user_form})
+            return render(request, 'main/registration_done.html', {'new_user': user_form})
     else:
         user_form = UserRegistrationForm()
-    return render(request, 'registration.html', {'user_form': user_form})
+    return render(request, 'main/registration.html', {'user_form': user_form})
 
 
 def login(request):
