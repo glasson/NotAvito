@@ -1,10 +1,31 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'main/css/bootstrap.min.css'%}">
+    <<link rel="stylesheet" href="{%static 'main/css/advertisement.css'%}">
+    <title>advertisement</title>
 </head>
 <body>
-$END$
+    <div class="post-head">
+        <a class="post-title"> {{title}}</a>
+        <a class="post-price"> Цена:{{price}}</a>
+        <a class="post-rating"> Рейтинг:{{rating}} </a>
+    </div>
+    <div class="description">
+        <a class="post-description">Описание</a>
+        <textarea class="post-description-info">{{description}}</textarea>
+    </div>
+    <div class="contacts">
+        <a class="contacts-info"> Контакты </a>
+        <a class="phone-number">Телефон: {{phone_number}}</a>
+        <a class="email">Email: {{email}}</a>
+    </div>
+    <div class="chat">
+        <form>
+            <button class="chat-button"> Чат </button>
+        </form>
+    </div>
 </body>
 </html>
