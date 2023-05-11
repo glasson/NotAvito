@@ -33,7 +33,7 @@ def delete_post(request, post_id):
         return render(request, template_name='main/success_deleted.html')
 
 
-def edit_record(request, post_id):
+def edit_post(request, post_id):
     record = get_object_or_404(Post, id=post_id)
 
     if request.method == 'POST':
@@ -44,7 +44,7 @@ def edit_record(request, post_id):
     else:
         form = PostForm(instance=record)
 
-    return render(request, 'edit_record.html', {'form': form, 'record': record})
+    return render(request, 'edit_post.html', {'form': form, 'record': record})
 
 def main():
     return HttpResponse("main")
