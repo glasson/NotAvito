@@ -5,6 +5,7 @@
 
 <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 {% endblock %}
 
 {% block header %}
@@ -42,12 +43,22 @@
 {% endblock %}
 
 {% block form %}
-      <h1>Профиль</h1>
-      <p>Username : {{username}}</p>
-      <p>First name : {{first_name}}</p>
-      <p>Last name : {{last_name}}</p>
-      <p>E-mail : {{email}}</p>
-      <p>Last login : {{last_login}}</p>
+      <h1><b>Профиль</b></h1>
+      <div class="userdata">
+        <p class="userdata-text">Username : {{username}}</p>
+        <table>
+        <tr>
+            <td>
+                <p class="userdata-text">First name : {{first_name}}</p>
+                
+            </td>
+            <td>
+                <p class="userdata-text">Last name : {{last_name}}</p>
+            </td>
+        </tr></table>
+        <p class="userdata-text">E-mail : {{email}}</p>
+        <p class="userdata-text">Last login : {{last_login}}</p></div>
+      
 
       <!-- <form method="get" enctype="multipart/form-data">
         {% csrf_token %}
