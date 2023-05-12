@@ -1,11 +1,10 @@
-{% extends 'main/create_post.html' %}
+{% extends 'main/base.html' %}
 {% load static %}
 
 {% block link %}
 
 <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
-<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 {% endblock %}
 
 {% block header %}
@@ -42,7 +41,9 @@
 </div>
 {% endblock %}
 
-{% block form %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
       <h1><b>Профиль</b></h1>
       <div class="userdata">
         <p class="userdata-text">Username : {{username}}</p>

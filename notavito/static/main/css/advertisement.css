@@ -1,0 +1,162 @@
+.post-title {
+    position: absolute;
+    width: 385px;
+    height: 39.67px;
+    left: 50px;
+    top: 118px;
+
+    font-family: 'Libre Franklin', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.post-price {
+    position: absolute;
+    width: 109px;
+    height: 48px;
+    left: 482px;
+    top: 118px;
+
+    font-family: 'Libre Franklin', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.post-rating {
+    position: absolute;
+    width: 182px;
+    height: 51px;
+    left: 749px;
+    top: 118px;
+
+    font-family: 'Libre Franklin', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.post-description {
+    position: absolute;
+    width: 158px;
+    height: 39px;
+    left: 754px;
+    top: 210px;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.post-description-info {
+    position: absolute;
+    width: 693px;
+    height: 237px;
+    left: 498px;
+    top: 278px;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #000000;
+
+}
+
+.contacts {
+}
+
+.contacts-info {
+    position: absolute;
+    width: 194px;
+    height: 51px;
+    left: 689px;
+    top: 547px;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.phone-number {
+    position: absolute;
+    width: 428px;
+    height: 39px;
+    left: 498px;
+    top: 592px;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+
+.email {
+    position: absolute;
+    width: 506px;
+    height: 39px;
+    left: 498px;
+    top: 631px;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+
+.chat {
+
+}
+
+.chat-button {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 125px;
+    height: 136px;
+    left: 1114px;
+    top: 545px;
+
+    background: #00A1FF;
+    border: 1px solid #000000;
+    border-radius: 20px
+}
