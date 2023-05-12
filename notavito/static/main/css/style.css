@@ -1,0 +1,23 @@
+.userdata{
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+}
+.userdata-text{
+    width: auto;
+    height: auto;
+    background-color: rgb(175, 171, 254);
+    font-size: 32px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+}
+h1{
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+td{
+    width:400px;
+}

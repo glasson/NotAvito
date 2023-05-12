@@ -1,10 +1,25 @@
-{% extends 'main/base.html' %}
 
-{% block content %}
-    <h1>Создание поста</h1>
-      <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Принять</button>
-      </form>
-{%endblock%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block link %} {% endblock %}
+</head>
+<body>
+{% block header %}
+{% endblock %}
+
+
+{% block form %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+
+
+
+</body>
+</html>
