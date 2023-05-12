@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from notavito.main.views import create_post, search, main, edit_post, registration, delete_post
+from main.views import create_post, search, main, edit_post, registration, delete_post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
