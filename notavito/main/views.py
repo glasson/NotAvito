@@ -77,3 +77,39 @@ def profile(request):
     # for user in users:
     #     print(user.last_name)
 
+<<<<<<< Updated upstream
+=======
+def home(request):
+    post = Post.objects.all()
+    post = post.filter().order_by("-id")[:8]
+    pposts = []
+    for posts in post:
+        print(posts)
+        pposts.append(posts)
+    return render(request, 'main/home.html', context={
+        'title1':pposts[0].title,
+        'title2':pposts[1].title,
+        'title3':pposts[2].title,
+        'title4':pposts[3].title,
+        'title5':pposts[4].title,
+        'title6':pposts[5].title,
+        'title7':pposts[6].title,
+        'title8':pposts[7].title,
+        'id1':pposts[0].id,
+        'id2':pposts[1].id,
+        'id3':pposts[2].id,
+        'id4':pposts[3].id,
+        'id5':pposts[4].id,
+        'id6':pposts[5].id,
+        'id7':pposts[6].id,
+        'id8':pposts[7].id,
+        'url1':pposts[0].photo,
+        'url2':pposts[1].photo,
+        'url3':pposts[2].photo,
+        'url4':pposts[3].photo,
+        'url5':pposts[4].photo,
+        'url6':pposts[5].photo,
+        'url7':pposts[6].photo,
+        'url8':pposts[7].photo
+        })
+>>>>>>> Stashed changes
