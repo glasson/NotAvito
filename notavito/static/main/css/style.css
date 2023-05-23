@@ -21,3 +21,23 @@ h1{
 td{
     width:400px;
 }
+
+.custom-button {
+    width: 600px;
+    height: 70px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-left: 550px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    border:solid;
+
+}

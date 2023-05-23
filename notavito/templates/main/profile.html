@@ -5,6 +5,7 @@
 
 <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+
 {% endblock %}
 
 {% block header %}
@@ -59,7 +60,9 @@
         </tr></table>
         <p class="userdata-text">E-mail : {{email}}</p>
         <p class="userdata-text">Last login : {{last_login}}</p></div>
-      
+        <a href="http://127.0.0.1:8000/create_post" class="centered-link">
+            <button type="submit" class="custom-button">Создать объявление</button>
+        </a>
 
       <!-- <form method="get" enctype="multipart/form-data">
         {% csrf_token %}

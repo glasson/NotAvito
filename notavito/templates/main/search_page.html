@@ -4,10 +4,11 @@
 {% block content %}
 {% for post in posts %}
     <p>
-        {{post.image}}
-        {{post.title}}
-        {{post.description}}
-        ----
+        <p><img src="https://static.tildacdn.com/tild3365-6461-4631-b065-363831386362/sa-10-scaled.jpg" width="200" height="200" alt=""></p>
+        Название: {{post.title}}
+        <p>Описание: {{post.description}}</p>
+<p>Цена: {{post.price}}</p>
     </p>
+--------------------------------------------
 {% endfor %}
 {% endblock %}

@@ -7,6 +7,7 @@
     <title>NotAvito</title>
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 </head>
 <body>
 <header>
@@ -23,7 +24,7 @@
       {% if user.is_authenticated %}
             <a href="http://127.0.0.1:8000/profile">Профиль</a>
       {% else %}
-            <a href="http://127.0.0.1:8000/registration">Вход</a>
+            <a href="http://127.0.0.1:8000/registration">Регистрация</a>
       {% endif %}
   </div>
 </header>
