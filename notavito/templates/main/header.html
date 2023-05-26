@@ -1,23 +1,18 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{%static 'main/css/header.css'%}">
-</head>
-<body>
 <header>
   <div class="header-left">
     <a href="main/">Главная</a>
   </div>
-  <div class="header-middle">
-    <input type="text" placeholder="Поиск">
-  </div>
+    <form action="{% url 'search' %}">
+        <div class="header-middle">
+            <input type="text" placeholder="Поиск" name="search">
+        </div>
+    </form>
+
   <div class="header-right">
-    <a href="#">Вход</a>
+      {% if user.is_authenticated %}
+            <a href="#">Профиль</a>
+      {% else %}
+            <a href="#">Вход</a>
+      {% endif %}
   </div>
 </header>
-
-</body>
-</html>
