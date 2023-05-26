@@ -6,7 +6,7 @@
 .userdata-text{
     width: auto;
     height: auto;
-    background-color: rgb(175, 171, 254);
+    background-color: rgb(242, 242, 242);
     font-size: 32px;
     border:solid;
     border-color: rgb(0, 0, 0);
@@ -20,4 +20,24 @@ h1{
 }
 td{
     width:400px;
+}
+
+.custom-button {
+    width: 600px;
+    height: 70px;
+    background-color: rgb(242, 242, 242);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-left: 550px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    border:solid;
+
 }
