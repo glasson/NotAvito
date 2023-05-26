@@ -1,7 +1,7 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
-    <h1>Создание поста</h1>
+    <h1 style="text-align: center">Создание поста</h1>
       <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}

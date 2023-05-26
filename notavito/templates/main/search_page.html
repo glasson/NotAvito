@@ -3,11 +3,12 @@
 
 {% block content %}
 {% for post in posts %}
-    <p>
-        {{post.image}}
-        {{post.title}}
-        {{post.description}}
+
+     <img src="{{post.photo}}" width="250" height="150">
+     <p>   {{post.title}}</p>
+      <p>  {{post.description}}</p>
+        <p>  {{post.price}}р</p>
         ----
-    </p>
+
 {% endfor %}
 {% endblock %}
