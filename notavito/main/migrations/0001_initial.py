@@ -28,6 +28,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=30)),
                 ('description', models.CharField(max_length=512)),
 
+
                 ('photo', models.URLField()),
                 ('contacts', models.CharField(max_length=15)),
                 ('price', models.IntegerField()),
@@ -35,6 +36,7 @@ class Migration(migrations.Migration):
                 ('rating', models.FloatField()),
                 ('category', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='main.category')),
                 ('owner', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to=settings.AUTH_USER_MODEL)),
+
             ],
         ),
     ]
