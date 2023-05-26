@@ -11,10 +11,11 @@ header {
   font-weight: bold;
   font-size: 24px;
   color: #333;
+  margin-left: 50px;
 }
 
-.header-middle input[type="text"] {
-  width: 300px;
+.header-middle input{
+
   padding: 8px;
   font-size: 16px;
   border: none;
